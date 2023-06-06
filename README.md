@@ -1,1 +1,1 @@
-# MeanStackTraining
+# Mean Stack Training
