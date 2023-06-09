@@ -1,3 +1,9 @@
 <div class="bodyClass">
-    Message from new body component from outer html
+    Message from new body component from outer html {{left1}}
+    <br/>
+    {{myDate   }} <br/>
+    {{myDate | date | uppercase}}<br/>
+    {{myDate | date:"fullDate"| uppercase |lowercase }}
+    <br/>
+    {{myDate | date:"MMMM" }}
     </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-my-right',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-right.component.css']
 })
 export class MyRightComponent {
-
+ @Input() r1=0;
 }
