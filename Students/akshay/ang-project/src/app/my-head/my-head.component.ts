@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-head.component.css']
 })
 export class MyHeadComponent {
+  companyName: string ='Test 123'
+  
+  changeName(){
+    var newvar=10
+    this.companyName= "Angular project"+ newvar
+    this.b=10;
+    
+  }
+  b: any;
 
 }

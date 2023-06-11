@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-my-left',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-left.component.css']
 })
 export class MyLeftComponent {
+  @Input() connecting:number = 0;
+    myDate= new Date()
 
 }
