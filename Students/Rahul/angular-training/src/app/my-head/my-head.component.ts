@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-head.component.css']
 })
 export class MyHeadComponent {
-
+  myDate= new Date();
 }
