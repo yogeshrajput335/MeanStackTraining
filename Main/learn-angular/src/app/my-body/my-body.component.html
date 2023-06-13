@@ -1,10 +1,10 @@
-This is body {{a}}
+This is body {{ a }}<br />
+Data from right child : {{ NewData }}
 <div class="bodyClass">
-    
-    <div style="width:20%">
-        <app-left [left1]="a"></app-left>
-    </div>
-    <div style="width:80%">
-        <app-my-right [r1]="a"></app-my-right>
-    </div>
+  <div style="width: 20%">
+    <app-left [left1]="a"></app-left>
+  </div>
+  <div style="width: 80%">
+    <app-my-right [r1]="a" (outItem)="parentItem($event)"></app-my-right>
+  </div>
 </div>

@@ -2,4 +2,10 @@
     <h1>{{companyName}}</h1>
     <input type="text" [value]="companyName">
     <button (click)="changeName()">Change Name</button>
+    <ul>
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/news" routerLinkActive="active">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
 </div>
