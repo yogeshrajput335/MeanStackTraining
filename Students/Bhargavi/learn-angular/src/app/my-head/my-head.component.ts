@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-head.component.css']
 })
 export class MyHeadComponent {
-  UserName = 'Old Name'
-  changeName(){
-    var xyz =10
-    this.UserName = "New Name"+xyz
-  }
 
-  a : any;
-}
+  }

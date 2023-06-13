@@ -6,7 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./my-left.component.css']
 })
 export class MyLeftComponent {
-  @Input() left1:number =0;
+  @Input() age:any;
+
   MyDate =new Date()
 
 }

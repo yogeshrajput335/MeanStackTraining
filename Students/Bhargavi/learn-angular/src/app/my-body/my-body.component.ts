@@ -6,6 +6,6 @@ import { Component } from "@angular/core";
     styleUrls: ['./my-body.component.css']
 })
 export class MyBodyComponent {
-    a="Bhargavi";
-
+ a = 25
+ b = 40
 }
