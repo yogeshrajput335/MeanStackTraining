@@ -8,4 +8,11 @@ import { Component } from "@angular/core";
 export class MyBodyComponent {
  a = 25
  b = 40
+
+ NewData: any;
+ parentItem(data: any) {
+   this.NewData = data;
+
+ 
+}
 }
