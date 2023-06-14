@@ -1,3 +1,19 @@
 <div class="bodyClass">
-    Message from new body component from outer html {{r1}}
+   
+    <label for="item-input">Add an item:</label>
+    <input type="text" id="item-input" #newItem>
+    <button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+
+    <div style="width:50px;height:50px;background-color: azure;" *ngIf="showDiv">Test</div>
+    <button (click)="ShowDiv()">Show/Hide</button>
+    <ul >
+        <li *ngFor="let i of arr;let ii = index">{{ii+1}} : {{i}}</li>
+    </ul>
+
+    <div [ngClass]="isCondition?'test':'test2'"></div>
+
+    <div [ngStyle]="{'width':'30px','height':'30px','background-color':'green'}"></div>
+
+    <input type="text" [(ngModel)]="name">
+    {{name}}
     </div>

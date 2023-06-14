@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class MyBodyComponent {
   a=25
+  new=55
+  NewData: any;
+  parentItem(data: any){
+    return this.NewData=data;
+  }
 
 }

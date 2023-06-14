@@ -1,9 +1,10 @@
-referencing the variable 'a' that is assigned a value {{a}}
+{{NewData}}
 <div class="bodyClass">
     <div style="width:30%">
-        <app-my-left [connecting]="a"></app-my-left>
+        <app-my-left [l1]="new" (outItem)="parentItem($event)" ></app-my-left>
     </div>
     <div style="width:70%">
-        <app-my-right></app-my-right>
+        <app-my-right [connecting]="a"></app-my-right>
     </div>
+    
 </div>

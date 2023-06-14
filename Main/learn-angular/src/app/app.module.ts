@@ -7,6 +7,14 @@ import { MyFootComponent } from './my-foot/my-foot.component';
 import { MyBodyComponent } from './my-body/my-body.component';
 import { MyLeftComponent } from './my-left/my-left.component';
 import { MyRightComponent } from './my-right/my-right.component';
+import { FormsModule } from '@angular/forms';
+import { MyNewsComponent } from './my-news/my-news.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'home', component: MyBodyComponent },
+  { path: 'news', component: MyNewsComponent },
+];
 
 @NgModule({
   declarations: [
@@ -15,10 +23,13 @@ import { MyRightComponent } from './my-right/my-right.component';
     MyFootComponent,
     MyBodyComponent,
     MyLeftComponent,
-    MyRightComponent
+    MyRightComponent,
+    MyNewsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
