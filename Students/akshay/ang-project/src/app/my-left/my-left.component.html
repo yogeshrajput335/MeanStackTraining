@@ -1,5 +1,19 @@
 <div class="bodyClass">
-    declared number in parent and child component variable is changing{{connecting}}<br/>
-    {{myDate}}<br/>
-    {{myDate | date:"MMMM" | uppercase}}
+    All about Angluar CLI<br/><br/>
+    <label for="item-input">Add an item:</label>
+    <input type="text" id="item-input" #newItem>
+    <button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button><br/><br/>
+    <div style="width: 80px;height: 80px;background-color: black;" *ngIf="showDiv"> Testing</div>
+    <button (click)="ShowDiv()">Show/Hide</button><br/><br/>
+    <ul>
+        <li *ngFor="let i of array1">{{i}}</li>
+    </ul>
+    
+    <div [ngClass]="isCondition?'test':'test2'"></div><br/>
+    <div [ngStyle]="{'width':'30px','height':'30px','background-color':'green'}"></div>
+
+    <input type="text" [(ngModel)]="name">
+    {{name}}
+    
+    
 </div>
