@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-my-right',
@@ -12,5 +12,11 @@ export class MyRightComponent {
     this.UserName = "Bhargavi Vemula"
   }
   
+  @Output() outItem : EventEmitter <string>=new EventEmitter<string>();
+
+  PassData(){
+    this.outItem.emit("This message is from Child Component");
+  
+  }
 
 }
