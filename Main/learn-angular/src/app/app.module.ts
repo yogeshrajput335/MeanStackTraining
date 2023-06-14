@@ -10,10 +10,12 @@ import { MyRightComponent } from './my-right/my-right.component';
 import { FormsModule } from '@angular/forms';
 import { MyNewsComponent } from './my-news/my-news.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MyAboutComponent } from './my-about/my-about.component';
 
 const routes: Routes = [
   { path: 'home', component: MyBodyComponent },
   { path: 'news', component: MyNewsComponent },
+  { path: 'about1', component: MyAboutComponent },
 ];
 
 @NgModule({
@@ -24,7 +26,8 @@ const routes: Routes = [
     MyBodyComponent,
     MyLeftComponent,
     MyRightComponent,
-    MyNewsComponent
+    MyNewsComponent,
+    MyAboutComponent
   ],
   imports: [
     BrowserModule,
