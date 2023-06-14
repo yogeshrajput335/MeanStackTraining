@@ -1,8 +1,10 @@
+{{NewData}}
 <div class="bodyClass">
     <div style="width:20%">
-        <app-my-left [age]="a"></app-my-left>
+        <app-my-left [age]="a"></app-my-left> 
     </div>
     <div style="width:20%">
-        <app-my-right [Training]="b" (OutItem)="ParentItem($event)"></app-my-right>
+        <app-my-right [Training]="b" (outItem)="parentItem($event)"></app-my-right>
+    
     </div>
 </div>

@@ -9,5 +9,5 @@ export class MyLeftComponent {
   @Input() age:any;
 
   MyDate =new Date()
-
+  
 }
