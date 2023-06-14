@@ -11,11 +11,16 @@ import { FormsModule } from '@angular/forms';
 import { MyNewsComponent } from './my-news/my-news.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MyAboutComponent } from './my-about/my-about.component';
+import { MyTemplateFormComponent } from './my-template-form/my-template-form.component';
+import { HttpConsumeApiComponent } from './http-consume-api/http-consume-api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: 'home', component: MyBodyComponent },
   { path: 'news', component: MyNewsComponent },
   { path: 'about1', component: MyAboutComponent },
+  { path: 'template-form', component: MyTemplateFormComponent },
+  { path: 'use-public-api', component: HttpConsumeApiComponent },
 ];
 
 @NgModule({
@@ -27,10 +32,13 @@ const routes: Routes = [
     MyLeftComponent,
     MyRightComponent,
     MyNewsComponent,
-    MyAboutComponent
+    MyAboutComponent,
+    MyTemplateFormComponent,
+    HttpConsumeApiComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forRoot(routes)
   ],
