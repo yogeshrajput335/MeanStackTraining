@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-body.component.css']
 })
 export class MyBodyComponent {
-a = "Rahul";
+  a = "Rahul";
+  newData: any;
+
+  recieveData(data: any){
+    this.newData = data;
+  }
+  
 }
