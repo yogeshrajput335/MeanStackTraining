@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-my-right',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class MyRightComponent {
   @Input() name:String="";
+  @Output() outItem = new EventEmitter<string>();
+
+  sendData(data: any){
+    this.outItem.emit(data);
+  }
 }
