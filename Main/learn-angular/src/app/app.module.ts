@@ -14,6 +14,7 @@ import { MyAboutComponent } from './my-about/my-about.component';
 import { MyTemplateFormComponent } from './my-template-form/my-template-form.component';
 import { HttpConsumeApiComponent } from './http-consume-api/http-consume-api.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ObservablePromiseComponent } from './observable-promise/observable-promise.component';
 
 const routes: Routes = [
   { path: 'home', component: MyBodyComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'about1', component: MyAboutComponent },
   { path: 'template-form', component: MyTemplateFormComponent },
   { path: 'use-public-api', component: HttpConsumeApiComponent },
+  { path: 'obser-promise', component: ObservablePromiseComponent },
 ];
 
 @NgModule({
@@ -34,7 +36,8 @@ const routes: Routes = [
     MyNewsComponent,
     MyAboutComponent,
     MyTemplateFormComponent,
-    HttpConsumeApiComponent
+    HttpConsumeApiComponent,
+    ObservablePromiseComponent
   ],
   imports: [
     BrowserModule,
