@@ -11,10 +11,15 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { MyContactinfoComponent } from './my-contactinfo/my-contactinfo.component';
 import { MyHomeComponent } from './my-home/my-home.component';
+import { APItemplateComponent } from './apitemplate/apitemplate.component';
+import { FormtemplateComponent } from './formtemplate/formtemplate.component';
+import { HttpClientModule } from '@angular/common/http';
 
   const routes: Routes = [
     { path: 'home', component: MyBodyComponent },
     { path: 'contactus', component: MyContactinfoComponent },
+    { path: 'Formtemplate', component: FormtemplateComponent },
+    { path: 'apitemplate', component: APItemplateComponent },
   ];
 
 
@@ -27,11 +32,14 @@ import { MyHomeComponent } from './my-home/my-home.component';
     MyRightComponent,
     MyBodyComponent,
     MyContactinfoComponent,
-    MyHomeComponent
+    MyHomeComponent,
+    APItemplateComponent,
+    FormtemplateComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
