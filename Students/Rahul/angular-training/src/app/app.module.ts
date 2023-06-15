@@ -11,11 +11,16 @@ import { MyRightComponent } from './my-right/my-right.component';
 import { MyRegistrationComponent } from './my-registration/my-registration.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import {FormsModule} from '@angular/forms';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { ConsumeApiComponent } from './consume-api/consume-api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: 'register', component: MyRegistrationComponent },
   { path: 'home', component: MyBodyComponent },
-  { path: 'aboutus', component: AboutUsComponent}
+  { path: 'aboutus', component: AboutUsComponent},
+  { path: 'form', component: TemplateFormComponent},
+  { path: 'api', component: ConsumeApiComponent}
 ];
 
 @NgModule({
@@ -27,12 +32,15 @@ const routes: Routes = [
     MyLeftComponent,
     MyRightComponent,
     MyRegistrationComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    TemplateFormComponent,
+    ConsumeApiComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
