@@ -1,1 +1,8 @@
-hello akshay how are you
+connecting visual studio to git
+creating components
+using pipes to present dates
+implemented pipes and custom pipes
+used template forms
+created router links
+observables
+injectables
