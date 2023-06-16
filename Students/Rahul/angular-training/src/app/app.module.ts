@@ -15,6 +15,7 @@ import { TemplateFormComponent } from './template-form/template-form.component';
 import { ConsumeApiComponent } from './consume-api/consume-api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ObservablePromiseComponent } from './observable-promise/observable-promise.component';
+import { DependencyInjecComponent } from './dependency-injec/dependency-injec.component';
 
 const routes: Routes = [
   { path: 'register', component: MyRegistrationComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'aboutus', component: AboutUsComponent},
   { path: 'form', component: TemplateFormComponent},
   { path: 'api', component: ConsumeApiComponent},
-  { path: 'obsprom', component: ObservablePromiseComponent}
+  { path: 'obsprom', component: ObservablePromiseComponent},
+  { path: 'depenijc', component: DependencyInjecComponent}
 ];
 
 @NgModule({
@@ -37,7 +39,8 @@ const routes: Routes = [
     AboutUsComponent,
     TemplateFormComponent,
     ConsumeApiComponent,
-    ObservablePromiseComponent
+    ObservablePromiseComponent,
+    DependencyInjecComponent
   ],
   imports: [
     BrowserModule,
