@@ -14,12 +14,14 @@ import { MyHomeComponent } from './my-home/my-home.component';
 import { APItemplateComponent } from './apitemplate/apitemplate.component';
 import { FormtemplateComponent } from './formtemplate/formtemplate.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ObservablesComponent } from './observables/observables.component';
 
   const routes: Routes = [
     { path: 'home', component: MyBodyComponent },
     { path: 'contactus', component: MyContactinfoComponent },
     { path: 'Formtemplate', component: FormtemplateComponent },
     { path: 'apitemplate', component: APItemplateComponent },
+    { path: 'obs', component: ObservablesComponent }
   ];
 
 
@@ -34,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     MyContactinfoComponent,
     MyHomeComponent,
     APItemplateComponent,
-    FormtemplateComponent
+    FormtemplateComponent,
+    ObservablesComponent
   ],
   imports: [
     BrowserModule,
