@@ -14,13 +14,15 @@ import { AboutAngularComponent } from './about-angular/about-angular.component';
 import { TemplatesComponent } from './templates/templates.component';
 import { ApiComponent } from './api/api.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ObservableComponent } from './observable/observable.component';
 
 const routes: Routes = [
   { path: 'home', component: MyBodyComponent },
   { path: 'day2', component: Day2Component },
   { path: 'about-angular', component: AboutAngularComponent },
   { path: 'templates', component: TemplatesComponent },
-  { path: 'use-public-api', component: ApiComponent }
+  { path: 'use-public-api', component: ApiComponent },
+  { path: 'observable', component: ObservableComponent  }
 ];
 
 
@@ -35,7 +37,8 @@ const routes: Routes = [
     Day2Component,
     AboutAngularComponent,
     TemplatesComponent,
-    ApiComponent
+    ApiComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
