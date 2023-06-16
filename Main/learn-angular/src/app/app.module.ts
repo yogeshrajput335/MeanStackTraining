@@ -15,6 +15,10 @@ import { MyTemplateFormComponent } from './my-template-form/my-template-form.com
 import { HttpConsumeApiComponent } from './http-consume-api/http-consume-api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ObservablePromiseComponent } from './observable-promise/observable-promise.component';
+import { DependancyInjectionComponent } from './dependancy-injection/dependancy-injection.component';
+import { HttpCall1Service } from './services/call-http1.service';
+import { CustomPipe1Pipe } from './pipes/custom-pipe1.pipe';
+import { CustomPipe2Pipe } from './pipes/custom-pipe2.pipe';
 
 const routes: Routes = [
   { path: 'home', component: MyBodyComponent },
@@ -23,6 +27,7 @@ const routes: Routes = [
   { path: 'template-form', component: MyTemplateFormComponent },
   { path: 'use-public-api', component: HttpConsumeApiComponent },
   { path: 'obser-promise', component: ObservablePromiseComponent },
+  { path: 'dep-ins', component: DependancyInjectionComponent },
 ];
 
 @NgModule({
@@ -37,7 +42,10 @@ const routes: Routes = [
     MyAboutComponent,
     MyTemplateFormComponent,
     HttpConsumeApiComponent,
-    ObservablePromiseComponent
+    ObservablePromiseComponent,
+    DependancyInjectionComponent,
+    CustomPipe1Pipe,
+    CustomPipe2Pipe
   ],
   imports: [
     BrowserModule,
@@ -45,7 +53,7 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [HttpCall1Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
