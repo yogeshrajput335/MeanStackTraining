@@ -7,7 +7,7 @@ import { MyFootComponent } from './my-foot/my-foot.component';
 import { MyBodyComponent } from './my-body/my-body.component';
 import { MyLeftComponent } from './my-left/my-left.component';
 import { MyRightComponent } from './my-right/my-right.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyNewsComponent } from './my-news/my-news.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MyAboutComponent } from './my-about/my-about.component';
@@ -19,16 +19,10 @@ import { DependancyInjectionComponent } from './dependancy-injection/dependancy-
 import { HttpCall1Service } from './services/call-http1.service';
 import { CustomPipe1Pipe } from './pipes/custom-pipe1.pipe';
 import { CustomPipe2Pipe } from './pipes/custom-pipe2.pipe';
+import { MyRectiveFormComponent } from './my-rective-form/my-rective-form.component';
+import { AppRoutingModule } from './app-routing.module';
 
-const routes: Routes = [
-  { path: 'home', component: MyBodyComponent },
-  { path: 'news', component: MyNewsComponent },
-  { path: 'about1', component: MyAboutComponent },
-  { path: 'template-form', component: MyTemplateFormComponent },
-  { path: 'use-public-api', component: HttpConsumeApiComponent },
-  { path: 'obser-promise', component: ObservablePromiseComponent },
-  { path: 'dep-ins', component: DependancyInjectionComponent },
-];
+
 
 @NgModule({
   declarations: [
@@ -45,13 +39,15 @@ const routes: Routes = [
     ObservablePromiseComponent,
     DependancyInjectionComponent,
     CustomPipe1Pipe,
-    CustomPipe2Pipe
+    CustomPipe2Pipe,
+    MyRectiveFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [HttpCall1Service],
   bootstrap: [AppComponent]

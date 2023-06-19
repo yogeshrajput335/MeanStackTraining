@@ -9,8 +9,9 @@ import { Component } from '@angular/core';
 export class HttpConsumeApiComponent {
   local:any
   constructor(private http: HttpClient){
-    this.http.get('https://api.publicapis.org/entries').subscribe((data: any) => {
-      this.local = data;
+    this.http.get('http://localhost:4600/posts').subscribe((data: any) => {
+    console.log(data)  
+    this.local = data;
     });
   }
 }
