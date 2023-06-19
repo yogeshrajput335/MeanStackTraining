@@ -15,6 +15,9 @@ import { TemplatesComponent } from './templates/templates.component';
 import { ApiComponent } from './api/api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ObservableComponent } from './observable/observable.component';
+import { InjectionComponent } from './injection/injection.component';
+import { HttpCallService2 } from './services/call-http-services2';
+import { customPipe1 } from './pipes/custom-pipe';
 
 const routes: Routes = [
   { path: 'home', component: MyBodyComponent },
@@ -22,7 +25,8 @@ const routes: Routes = [
   { path: 'about-angular', component: AboutAngularComponent },
   { path: 'templates', component: TemplatesComponent },
   { path: 'use-public-api', component: ApiComponent },
-  { path: 'observable', component: ObservableComponent  }
+  { path: 'observable', component: ObservableComponent  },
+  { path: 'dep-ins', component: InjectionComponent },
 ];
 
 
@@ -38,7 +42,9 @@ const routes: Routes = [
     AboutAngularComponent,
     TemplatesComponent,
     ApiComponent,
-    ObservableComponent
+    ObservableComponent,
+    InjectionComponent,
+    customPipe1
   ],
   imports: [
     BrowserModule,
@@ -48,7 +54,7 @@ const routes: Routes = [
     
     
   ],
-  providers: [],
+  providers: [HttpCallService2],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
