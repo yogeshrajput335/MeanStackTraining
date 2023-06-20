@@ -9,6 +9,7 @@ import { MyRectiveFormComponent } from "./my-rective-form/my-rective-form.compon
 import { HttpConsumeApiComponent } from "./http-consume-api/http-consume-api.component";
 import { ObservablePromiseComponent } from "./observable-promise/observable-promise.component";
 import { DependancyInjectionComponent } from "./dependancy-injection/dependancy-injection.component";
+import { SubjectExpainComponent } from "./subject-expain/subject-expain.component";
 
 const routes: Routes = [
     { path: 'home', component: MyBodyComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
     { path: 'use-public-api', component: HttpConsumeApiComponent },
     { path: 'obser-promise', component: ObservablePromiseComponent },
     { path: 'dep-ins', component: DependancyInjectionComponent },
+    { path: 'app-subject-expain', component: SubjectExpainComponent },
   ];
 
 @NgModule({

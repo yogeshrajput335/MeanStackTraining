@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BehService } from '../services/behaviour-subject.service';
 
 @Component({
   selector: 'app-my-about',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-about.component.css']
 })
 export class MyAboutComponent {
+  constructor(private srv : BehService){}
+  n:number=0;
 
+  SendData(){
+    this.srv.set(this.n);
+  }
 }

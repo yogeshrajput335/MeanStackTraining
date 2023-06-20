@@ -21,6 +21,8 @@ import { CustomPipe1Pipe } from './pipes/custom-pipe1.pipe';
 import { CustomPipe2Pipe } from './pipes/custom-pipe2.pipe';
 import { MyRectiveFormComponent } from './my-rective-form/my-rective-form.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RoundBlockDirective } from './directives/round-block.directive';
+import { SubjectExpainComponent } from './subject-expain/subject-expain.component';
 
 
 
@@ -40,7 +42,9 @@ import { AppRoutingModule } from './app-routing.module';
     DependancyInjectionComponent,
     CustomPipe1Pipe,
     CustomPipe2Pipe,
-    MyRectiveFormComponent
+    MyRectiveFormComponent,
+    RoundBlockDirective,
+    SubjectExpainComponent
   ],
   imports: [
     BrowserModule,

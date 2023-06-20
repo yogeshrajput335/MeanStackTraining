@@ -1,5 +1,12 @@
-<p>Every day, Wipro’s 250,000 experts help
+<!-- https://www.positronx.io/creating-custom-directives-angular/ -->
+<p [appRoundBlock]="'red'">Every day, Wipro’s 250,000 experts help
     businesses around the globe accelerate
     digital transformation and build a more resilient,
     sustainable and inclusive future.
     </p>
+
+
+    <div class="demo-block" [appRoundBlock]="'green'">Data</div>
+
+    <input type="text" [(ngModel)]="n">
+    <button (click)="SendData()">Send Data To diffrent page</button>
