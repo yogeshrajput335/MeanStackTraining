@@ -8,7 +8,7 @@ import { MyBodyComponent } from './my-body/my-body.component';
 import { MyLeftComponent } from './my-left/my-left.component';
 import { MyRightComponent } from './my-right/my-right.component';
 import { Day2Component } from './day2/day2.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutAngularComponent } from './about-angular/about-angular.component';
 import { TemplatesComponent } from './templates/templates.component';
@@ -18,16 +18,9 @@ import { ObservableComponent } from './observable/observable.component';
 import { InjectionComponent } from './injection/injection.component';
 import { HttpCallService2 } from './services/call-http-services2';
 import { customPipe1 } from './pipes/custom-pipe';
+import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
-const routes: Routes = [
-  { path: 'home', component: MyBodyComponent },
-  { path: 'day2', component: Day2Component },
-  { path: 'about-angular', component: AboutAngularComponent },
-  { path: 'templates', component: TemplatesComponent },
-  { path: 'use-public-api', component: ApiComponent },
-  { path: 'observable', component: ObservableComponent  },
-  { path: 'dep-ins', component: InjectionComponent },
-];
 
 
 @NgModule({
@@ -44,14 +37,16 @@ const routes: Routes = [
     ApiComponent,
     ObservableComponent,
     InjectionComponent,
-    customPipe1
+    customPipe1,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(routes),
-    
+    AppRoutingModule,
+    ReactiveFormsModule
+       
     
   ],
   providers: [HttpCallService2],
