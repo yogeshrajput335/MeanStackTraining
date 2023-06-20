@@ -15,6 +15,7 @@ import { APItemplateComponent } from './apitemplate/apitemplate.component';
 import { FormtemplateComponent } from './formtemplate/formtemplate.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ObservablesComponent } from './observables/observables.component';
+import { DependencyInjecComponent } from './dependency-injection/dependency-injection.component';
 
   const routes: Routes = [
     { path: 'home', component: MyBodyComponent },
@@ -22,6 +23,7 @@ import { ObservablesComponent } from './observables/observables.component';
     { path: 'Formtemplate', component: FormtemplateComponent },
     { path: 'apitemplate', component: APItemplateComponent },
     { path: 'obs', component: ObservablesComponent }
+    { path: 'depenijc', component: DependencyInjecComponent}
   ];
 
 
@@ -37,7 +39,8 @@ import { ObservablesComponent } from './observables/observables.component';
     MyHomeComponent,
     APItemplateComponent,
     FormtemplateComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    DependencyInjecComponent
   ],
   imports: [
     BrowserModule,
