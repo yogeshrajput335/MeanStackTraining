@@ -10,12 +10,13 @@ import { MyLeftComponent } from './my-left/my-left.component';
 import { MyRightComponent } from './my-right/my-right.component';
 import { MyRegistrationComponent } from './my-registration/my-registration.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { ConsumeApiComponent } from './consume-api/consume-api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ObservablePromiseComponent } from './observable-promise/observable-promise.component';
 import { DependencyInjecComponent } from './dependency-injec/dependency-injec.component';
+import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
 
 const routes: Routes = [
   { path: 'register', component: MyRegistrationComponent },
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'form', component: TemplateFormComponent},
   { path: 'api', component: ConsumeApiComponent},
   { path: 'obsprom', component: ObservablePromiseComponent},
-  { path: 'depenijc', component: DependencyInjecComponent}
+  { path: 'depenijc', component: DependencyInjecComponent},
+  { path: 'reactive', component: MyReactiveFormComponent}
 ];
 
 @NgModule({
@@ -40,13 +42,15 @@ const routes: Routes = [
     TemplateFormComponent,
     ConsumeApiComponent,
     ObservablePromiseComponent,
-    DependencyInjecComponent
+    DependencyInjecComponent,
+    MyReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

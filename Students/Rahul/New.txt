@@ -1,1 +1,11 @@
-Hello
+Git(push, pull, stash)
+Angular CLI
+Components, Communication between components (Parent and child compoenents)
+@output, @input, event binding, property binding
+Pipes, Custom pipes
+directives
+Routing
+HTTP modules, API
+Tempelate driven form, Reactive form
+Obervables and promise
+Dependency injection
