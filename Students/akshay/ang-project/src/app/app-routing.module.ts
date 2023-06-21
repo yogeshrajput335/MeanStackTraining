@@ -9,6 +9,7 @@ import { ApiComponent } from './api/api.component';
 import { ObservableComponent } from './observable/observable.component';
 import { InjectionComponent } from './injection/injection.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { SubjectExplainComponent } from './subject-explain/subject-explain.component';
 const routes: Routes = [
     { path: 'home', component: MyBodyComponent },
     { path: 'day2', component: Day2Component },
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: 'observable', component: ObservableComponent  },
     { path: 'dep-ins', component: InjectionComponent },
     { path: 'reactive-form', component: ReactiveFormComponent },
+    { path: 'app-subject-explain', component: SubjectExplainComponent },
   ];
   @NgModule({
     imports: [RouterModule.forRoot(routes)],
