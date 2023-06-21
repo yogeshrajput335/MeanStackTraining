@@ -20,6 +20,8 @@ import { HttpCallService2 } from './services/call-http-services2';
 import { customPipe1 } from './pipes/custom-pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { SubjectExplainComponent } from './subject-explain/subject-explain.component';
+import { RoundBlockDirective } from './directives/round-block.directives';
 
 
 
@@ -38,7 +40,9 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     ObservableComponent,
     InjectionComponent,
     customPipe1,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    SubjectExplainComponent,
+    RoundBlockDirective
   ],
   imports: [
     BrowserModule,
