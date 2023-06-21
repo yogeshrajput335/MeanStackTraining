@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ObservablesComponent } from './observables/observables.component';
 import { DependencyInjecComponent } from './dependency-injec/dependency-injec.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { SubjectComponent } from './subject/subject.component';
 
 
   const routes: Routes = [
@@ -27,6 +28,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     { path: 'obs', component: ObservablesComponent },
     { path: 'depenijc', component: DependencyInjecComponent},
     { path: 'reactiveform', component: ReactiveFormComponent },
+    { path: 'subject', component: SubjectComponent },
 
 
   ];
@@ -46,7 +48,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     FormtemplateComponent,
     ObservablesComponent,
     DependencyInjecComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    SubjectComponent
   ],
   imports: [
     BrowserModule,

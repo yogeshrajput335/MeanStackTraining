@@ -1,1 +1,10 @@
-Hello! Good day!
+connecting visual studio to git
+creating components
+input, output, types of directives
+creating branches
+template driven form
+observables
+difference between observables and promise
+dependency injection
+custom pipes
+reactive Form
