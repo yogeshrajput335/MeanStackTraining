@@ -23,6 +23,10 @@ import { MyRectiveFormComponent } from './my-rective-form/my-rective-form.compon
 import { AppRoutingModule } from './app-routing.module';
 import { RoundBlockDirective } from './directives/round-block.directive';
 import { SubjectExpainComponent } from './subject-expain/subject-expain.component';
+import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
+import { ViewEncapsulationNoneComponent } from './view-encapsulation-none/view-encapsulation-none.component';
+import { JokeComponent } from './lifecycle/joke/joke.component';
+import { JokeListComponent } from './lifecycle/joke-list/joke-list.component';
 
 
 
@@ -44,7 +48,11 @@ import { SubjectExpainComponent } from './subject-expain/subject-expain.componen
     CustomPipe2Pipe,
     MyRectiveFormComponent,
     RoundBlockDirective,
-    SubjectExpainComponent
+    SubjectExpainComponent,
+    ViewEncapsulationComponent,
+    ViewEncapsulationNoneComponent,
+    JokeComponent,
+    JokeListComponent
   ],
   imports: [
     BrowserModule,
