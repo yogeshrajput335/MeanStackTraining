@@ -11,6 +11,7 @@ export class APItemplateComponent {
   local:any
   constructor(private http: HttpClient){
     this.http.get('https://api.publicapis.org/entries').subscribe((data: any) => {
+      console.log(data)
       this.local = data;
     });
   }

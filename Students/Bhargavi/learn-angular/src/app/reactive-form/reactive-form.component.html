@@ -1,0 +1,24 @@
+<form [formGroup]="myForm" (ngSubmit)="OnFormSave(myForm)">
+    <div>
+        <label>Name</label>
+        <input formControlName="name" type="text" placeholder="Your name"/>
+        <div style="color:red" *ngIf="myForm.get('name')?.invalid ">
+            Please provide a name.
+          </div>
+    </div>
+    <div>
+        <label>Email</label>
+        <input formControlName="email" type="text" placeholder="Your name"/>
+        <div style="color:red"  *ngIf="myForm.get('email')?.invalid">
+            Please provide a valid email address.
+          </div>
+    </div>
+    <div>
+        <label>Message</label>
+        <input formControlName="message" type="text" placeholder="Your name"/>
+        <div style="color:red"  *ngIf="myForm.get('message')?.invalid ">
+            Please provide a valid message.
+          </div>
+    </div>
+    <button type="submit" >Save</button>
+</form>
