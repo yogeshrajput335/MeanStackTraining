@@ -13,6 +13,10 @@ import { WithoutInjectableService } from '../services/withoutInjectable.service'
 export class DependancyInjectionComponent {
   //a:any
   _data:any;
+  nodeapidata:any;
+  bookName=''
+  bookId=0
+  msg=''
  constructor(private srv : CallHttpService,private srv1: HttpCall1Service,private c : CalculatorService){
  //this.a = srv;
  }
@@ -38,6 +42,44 @@ export class DependancyInjectionComponent {
   // Use service without inject
   let s  = new  WithoutInjectableService();
   console.log(s.add(2,3))
+ }
+ CallNodeApi1(){
+  this.srv.CallNodeAPI1().subscribe(data=>{
+    this.nodeapidata = data;
+  });
+ }
+ CallNodeApi2(){
+  this.srv.CallNodeAPI2().subscribe(data=>{
+    this.nodeapidata = data;
+  });
+ }
+ GetBooks(){
+  this.srv.GetBooks().subscribe(data=>{
+    this.nodeapidata = data;
+  })
+ }
+ OnSaveBook(){
+  this.msg =''
+  let book = {title:this.bookName}
+  this.srv.SaveBook(book).subscribe(data=>{
+    this.msg = "Book saved successfully !!"
+    //this.nodeapidata = data;
+  })
+ }
+ OnUpdateBook(){
+  this.msg =''
+  let book = {title:this.bookName}
+  this.srv.UpdateBook(book,this.bookId).subscribe(data=>{
+    //this.nodeapidata = data;
+    this.msg = "Book updated successfully !!"
+  })
+ }
+ OnDeleteBook(){
+  this.msg =''
+  this.srv.DeleteBook(this.bookId).subscribe(data=>{
+    //this.nodeapidata = data;
+    this.msg = "Book deleted successfully !!"
+  })
  }
 
 }

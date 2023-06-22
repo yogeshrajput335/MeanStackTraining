@@ -1,0 +1,60 @@
+
+STEP 1
+npm init
+npm install express
+npm install -g nodemon
+npm install cors
+
+
+STEP 2
+CODE IN (server.js)
+const express = require('express');
+const cors= require('cors');
+const app = express();
+app.listen(4600, (req, res)=>{
+    console.log("Server is running on 4600");
+});
+
+STEP 3
+RUN APPLICATION
+nodemon server.js
+
+STEP 4
+Create Server/routes/posts.js
+CODE
+const express = require('express');
+const router = express.Router();
+
+router.get('/',(req,res)=>{
+    res.send({data:"POST WORKS"});
+});
+
+module.exports = router;
+
+STEP 5
+const path = require('path');
+
+const posts = require('./server/routes/posts');
+
+app.use(express.static(path.join(__dirname,'dist')));
+app.use('/posts',posts);
+
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname,'dist/index.html'))
+});
+
+STEP 6
+Change PORT Logic
+const port  = process.env.PORT || 4600;
+
+app.listen(port, (req, res)=>{
+
+    console.log(`Server is running on ${port}`);
+
+});
+
+
+
+
+
+
