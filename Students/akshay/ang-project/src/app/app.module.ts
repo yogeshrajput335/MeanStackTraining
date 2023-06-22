@@ -22,6 +22,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { SubjectExplainComponent } from './subject-explain/subject-explain.component';
 import { RoundBlockDirective } from './directives/round-block.directives';
+import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
+import { ViewEncapsulationNoneComponent } from './view-encapsulation-none/view-encapsulation-none.component';
+import { JokeComponent } from './lifecycle/joke/joke.component';
+import { JokeListComponent } from './lifecycle/joke-list/joke-list.component';
 
 
 
@@ -42,7 +46,11 @@ import { RoundBlockDirective } from './directives/round-block.directives';
     customPipe1,
     ReactiveFormComponent,
     SubjectExplainComponent,
-    RoundBlockDirective
+    RoundBlockDirective,
+    ViewEncapsulationComponent,
+    ViewEncapsulationNoneComponent,
+    JokeComponent,
+    JokeListComponent
   ],
   imports: [
     BrowserModule,
