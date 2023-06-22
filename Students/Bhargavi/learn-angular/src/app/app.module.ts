@@ -18,6 +18,10 @@ import { ObservablesComponent } from './observables/observables.component';
 import { DependencyInjecComponent } from './dependency-injec/dependency-injec.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { SubjectComponent } from './subject/subject.component';
+import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
+import { EncapsulationNoneComponent } from './encapsulation-none/encapsulation-none.component';
+import { JokeComponent } from './life-cycle/joke/joke.component';
+import { JokeListComponent } from './life-cycle/joke-list/joke-list.component';
 
 
   const routes: Routes = [
@@ -29,6 +33,11 @@ import { SubjectComponent } from './subject/subject.component';
     { path: 'depenijc', component: DependencyInjecComponent},
     { path: 'reactiveform', component: ReactiveFormComponent },
     { path: 'subject', component: SubjectComponent },
+    { path: 'encapsulation', component: ViewEncapsulationComponent },
+    { path: 'jokelist', component: JokeListComponent },
+
+
+
 
 
   ];
@@ -49,7 +58,11 @@ import { SubjectComponent } from './subject/subject.component';
     ObservablesComponent,
     DependencyInjecComponent,
     ReactiveFormComponent,
-    SubjectComponent
+    SubjectComponent,
+    ViewEncapsulationComponent,
+    EncapsulationNoneComponent,
+    JokeComponent,
+    JokeListComponent
   ],
   imports: [
     BrowserModule,
