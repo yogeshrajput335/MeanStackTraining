@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ViewEncapsulation } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -17,6 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ObservablePromiseComponent } from './observable-promise/observable-promise.component';
 import { DependencyInjecComponent } from './dependency-injec/dependency-injec.component';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
+import { JokeComponent } from './lifecycle/joke/joke.component';
+import { JokeListComponent } from './lifecycle/joke-list/joke-list.component';
+import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
+import { ViewEncapsulationNoneComponent } from './view-encapsulation-none/view-encapsulation-none.component';
 
 const routes: Routes = [
   { path: 'register', component: MyRegistrationComponent },
@@ -26,7 +30,9 @@ const routes: Routes = [
   { path: 'api', component: ConsumeApiComponent},
   { path: 'obsprom', component: ObservablePromiseComponent},
   { path: 'depenijc', component: DependencyInjecComponent},
-  { path: 'reactive', component: MyReactiveFormComponent}
+  { path: 'reactive', component: MyReactiveFormComponent},
+  { path: 'lifecycle', component: JokeListComponent},
+  { path: 'encap', component: ViewEncapsulationComponent}
 ];
 
 @NgModule({
@@ -43,7 +49,11 @@ const routes: Routes = [
     ConsumeApiComponent,
     ObservablePromiseComponent,
     DependencyInjecComponent,
-    MyReactiveFormComponent
+    MyReactiveFormComponent,
+    JokeComponent,
+    JokeListComponent,
+    ViewEncapsulationComponent,
+    ViewEncapsulationNoneComponent
   ],
   imports: [
     BrowserModule,
