@@ -1,0 +1,3 @@
+https://www.mongodb.com/languages/mean-stack-tutorial
+
+mongodb+srv://blueverse:blueverse@cluster0.jhftgrs.mongodb.net/
