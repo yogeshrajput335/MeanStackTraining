@@ -4,3 +4,33 @@
 <button (click)="GetData2()"> Get Data with private provider</button>
 <button (click)="MultiplyTwoNumber()">CALC</button>
 {{_data |json}}
+<br/>
+<button (click)="CallNodeApi1()">Node Api 1</button>
+
+<button (click)="CallNodeApi2()">Node Api 2</button>
+<button (click)="GetBooks()">Get Books </button>
+
+<br/>
+{{nodeapidata|json}}
+
+<hr/>
+<table>
+    <tr>
+        <td>Title</td>
+        <td><input type="text" [(ngModel)]="bookName"></td>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td><input type="text" [(ngModel)]="bookId"></td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="OnSaveBook()">Save</button>
+
+            <button (click)="OnUpdateBook()">Update</button>
+
+            <button (click)="OnDeleteBook()">Delete</button>
+        </td>
+    </tr>
+</table>
+<span style="color: green;">{{msg}}</span>
