@@ -1,0 +1,3 @@
+Email server
+
+https://ethereal.email/
