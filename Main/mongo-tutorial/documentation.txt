@@ -1,0 +1,6 @@
+https://www.tutorialspoint.com/mongodb/index.htm
+
+https://www.mongodb.com/try/download/shell
+
+
+mongosh
